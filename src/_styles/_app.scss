@@ -116,7 +116,28 @@ body {
       width: 100%;
     }
   }
+
+  @media(max-width: 600px) {
+    .top-left-border {
+      left: 10px;
+      top: 10px;
+    }
+    .top-right-border {
+      right: 160px;
+      top: 10px;
+    }
+    .onepage {
+      &-logo {
+        margin-top: 50px;
+      }
+    }
+    footer {
+      left: -28px;
+      bottom: 80px;
+    }
+  }
 }
+
 
 .darktheme {
   .Stark {
