@@ -2,13 +2,17 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+body, html, #root {
+  height: 100%;
+}
+
 @mixin fontBrother() {
   font-family: brother-1816, sans-serif;
 }
 
 .Stark {
+  min-height: 100%;
   transition: all ease 0.2s;
-  min-height: 100vh;
   position: relative;
   div, h1, h2, h3, h4, h5, p, a, footer {
     color: black;
@@ -25,7 +29,8 @@ body {
     }
   }
   .onepage {
-    min-height: 100vh;
+    min-height: 100%;
+    width: 100%;
     &-logo {
       margin-top: 150px;
       width: 150px;
