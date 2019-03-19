@@ -1,0 +1,140 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin fontBrother() {
+  font-family: brother-1816, sans-serif;
+}
+
+.Stark {
+  transition: all ease 0.2s;
+  min-height: 100vh;
+  position: relative;
+  div, h1, h2, h3, h4, h5, p, a, footer {
+    color: black;
+  }
+  nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    ul {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  .onepage {
+    min-height: 100vh;
+    &-logo {
+      margin-top: 150px;
+      width: 150px;
+    }
+  }
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .top-left-border {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: black;
+    }
+    &:after {
+      width: 100px;
+      height: 1px;
+    }
+    &:before {
+      width: 1px;
+      height: 50px;
+    }
+  }
+  .top-right-border {
+    position: absolute;
+    right: 190px;
+    top: 50px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: black;
+    }
+    &:after {
+      width: 150px;
+      height: 1px;
+    }
+  }
+  footer {
+    font-size: 13px;
+    position: absolute;
+    transform: rotateZ(-90deg);
+    bottom: 150px;
+    left: -10px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      top: 50%;
+      right: -120px;
+      background: black;
+    }
+  }
+  .not-found {
+    text-decoration: none;
+    h1 {
+      @include fontBrother();
+      font-weight: 800;
+      font-size: 200px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .not-found {
+      h1 {
+        font-size: 80px;
+      }
+    }
+    nav {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.darktheme {
+  .Stark {
+    background: black;
+    div, h1, h2, h3, h4, h5, p, a, footer {
+      color: white;
+    }
+
+    .top-left-border, .top-right-border {
+      &:before, &:after {
+        background: white;
+      }
+    }
+
+    footer {
+      &:after {
+        background: white;
+      }
+    }
+  }
+}
