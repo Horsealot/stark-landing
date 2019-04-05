@@ -15,8 +15,8 @@ class Group extends Component {
                 <ContentPage>
                     <div className='products flex--space-between-center flex'>
                         <a href='' className='products__product flex flex--center-center flex--column'>
-                            <img src={'/assets/images/trictrac.png'} title='Trictrac Show logo' alt='Trictrac Show logo'/>
-                            <div className='products__product-title trictrac'>trictrac</div>
+                            <img src={'/assets/images/triktrak.png'} title='Triktrak Show logo' alt='Triktrak Show logo'/>
+                            <div className='products__product-title triktrak'>triktrak</div>
                         </a>
                         <a href='https://www.horsealot.com' className='products__product flex flex--center-center flex--column'>
                             <img src={'/assets/images/horsealot.png'} title='Horsealot logo' alt='Horsealot logo'/>
