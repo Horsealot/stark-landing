@@ -150,10 +150,19 @@ body, html, #root {
     .top-left-border {
       left: 15px;
       top: 20px;
+      &:before {
+        height: 25px;
+      }
+      &:after {
+        width: 50px;
+      }
     }
     .top-right-border {
-      right: 105px;
+      right: 95px;
       top: 20px;
+      &:after {
+        width: 70px;
+      }
     }
     .onepage {
       &-logo {
@@ -167,6 +176,10 @@ body, html, #root {
     footer {
       left: -15px;
       bottom: 80px;
+      &:after {
+        width: 65px;
+        right: -80px;
+      }
     }
   }
 }
