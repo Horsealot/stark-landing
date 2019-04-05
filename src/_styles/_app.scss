@@ -52,7 +52,7 @@ body, html, #root {
   .top-left-border {
     position: absolute;
     left: 50px;
-    top: 70px;
+    top: 60px;
 
     &:before, &:after {
       content: '';
@@ -73,7 +73,7 @@ body, html, #root {
   .top-right-border {
     position: absolute;
     right: 180px;
-    top: 70px;
+    top: 60px;
     &:before, &:after {
       content: '';
       position: absolute;
