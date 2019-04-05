@@ -11,8 +11,12 @@
   @media(max-width: 800px) {
     padding-left: 10px;
     padding-right: 10px;
+    &-logo {
+      width: 120px;
+      margin-bottom: 25px;
+    }
     h1 {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 }

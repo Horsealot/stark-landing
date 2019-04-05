@@ -118,8 +118,31 @@ body, html, #root {
       }
     }
     nav {
-      padding: 0;
-      width: 100%;
+      padding-left: 90px;
+      padding-bottom: 25px;
+      //width: 100%;
+    }
+    .top-left-border {
+      top: 55px;
+      &:before {
+        height: 30px;
+      }
+      &:after {
+        width: 55px;
+      }
+    }
+    .top-right-border {
+      top: 55px;
+      right: 130px;
+      &:after {
+        width: 80px;
+      }
+    }
+    footer {
+      &:after {
+        width: 80px;
+        right: -100px;
+      }
     }
   }
 
@@ -136,6 +159,10 @@ body, html, #root {
       &-logo {
         margin-top: 50px;
       }
+    }
+    nav {
+      padding: 0;
+      width: 100%;
     }
     footer {
       left: -28px;
