@@ -22,7 +22,7 @@ body, html, #root {
     bottom: 0;
     left: 0;
     padding-left: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     ul {
       text-align: center;
       padding: 0;
@@ -41,17 +41,18 @@ body, html, #root {
       li {
         display: inline-block;
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 10px;
         a {
           text-decoration: none;
+          text-transform: uppercase;
         }
       }
     }
   }
   .top-left-border {
     position: absolute;
-    left: 30px;
-    top: 50px;
+    left: 50px;
+    top: 60px;
 
     &:before, &:after {
       content: '';
@@ -61,18 +62,18 @@ body, html, #root {
       background: black;
     }
     &:after {
-      width: 100px;
+      width: 70px;
       height: 1px;
     }
     &:before {
       width: 1px;
-      height: 50px;
+      height: 40px;
     }
   }
   .top-right-border {
     position: absolute;
-    right: 190px;
-    top: 50px;
+    right: 180px;
+    top: 60px;
     &:before, &:after {
       content: '';
       position: absolute;
@@ -81,16 +82,16 @@ body, html, #root {
       background: black;
     }
     &:after {
-      width: 150px;
+      width: 120px;
       height: 1px;
     }
   }
   footer {
-    font-size: 13px;
+    font-size: 10px;
     position: absolute;
     transform: rotateZ(-90deg);
-    bottom: 150px;
-    left: -10px;
+    bottom: 155px;
+    left: 20px;
     &:after {
       content: '';
       position: absolute;
@@ -117,28 +118,69 @@ body, html, #root {
       }
     }
     nav {
-      padding: 0;
-      width: 100%;
+      padding-left: 90px;
+      padding-bottom: 25px;
+      //width: 100%;
+    }
+    .top-left-border {
+      top: 55px;
+      &:before {
+        height: 30px;
+      }
+      &:after {
+        width: 55px;
+      }
+    }
+    .top-right-border {
+      top: 55px;
+      right: 130px;
+      &:after {
+        width: 80px;
+      }
+    }
+    footer {
+      &:after {
+        width: 80px;
+        right: -100px;
+      }
     }
   }
 
   @media(max-width: 600px) {
     .top-left-border {
-      left: 10px;
-      top: 10px;
+      left: 15px;
+      top: 20px;
+      &:before {
+        height: 25px;
+      }
+      &:after {
+        width: 50px;
+      }
     }
     .top-right-border {
-      right: 160px;
-      top: 10px;
+      right: 95px;
+      top: 20px;
+      &:after {
+        width: 70px;
+      }
     }
     .onepage {
       &-logo {
-        margin-top: 50px;
+        margin-top: 70px;
+        width: 130px;
       }
     }
+    nav {
+      padding: 0 0 10px;
+      width: 100%;
+    }
     footer {
-      left: -28px;
+      left: -15px;
       bottom: 80px;
+      &:after {
+        width: 65px;
+        right: -80px;
+      }
     }
   }
 }

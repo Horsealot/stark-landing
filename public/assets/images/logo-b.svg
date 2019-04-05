@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="21px" viewBox="0 0 102 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-386.000000, -342.000000)">
+            <g id="Group-6" transform="translate(386.000000, 337.000000)">
+                <text id="ST-RK" font-family="Raleway-Bold, Raleway" font-size="25" font-weight="bold" letter-spacing="5.23999977" fill="#000000">
+                    <tspan x="0" y="24">ST  RK</tspan>
+                </text>
+                <polyline id="Triangle" stroke="#000000" stroke-width="3" stroke-linecap="round" points="57 24 49 9 41 24"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
