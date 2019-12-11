@@ -22,7 +22,7 @@ class App extends Component {
                           <Link to="/group">Group</Link>
                       </li>
                       <li>
-                          <Link to="/products/">Products</Link>
+                          <Link to="/products">Products</Link>
                       </li>
                   </ul>
               </nav>
