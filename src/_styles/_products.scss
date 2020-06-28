@@ -1,0 +1,32 @@
+.products {
+  max-width: 790px;
+  max-height: 650px;
+  flex-grow: 1;
+  padding-bottom: 100px;
+  &__product {
+    margin: 50px;
+    text-decoration: none;
+    img {
+      width: 100%;
+    }
+    &-title {
+      margin-top: 20px;
+      font-size: 11px;
+      line-height: 28px;
+      animation: fadeIn ease 1s;
+      -webkit-animation: fadeIn ease 1s;      
+    }
+  }
+  @media(max-width: 600px) {
+    max-height: inherit;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+    &__product {
+      flex-basis: 100%;
+      margin: 20px;
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.landing {
+  h1 {
+    font-size: 11px;
+    letter-spacing: 0.29px;
+    line-height: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+  }
+  &-logo {
+    width: 112px;
+    margin-top: -72px;
+    margin-bottom: 11px;
+  }
+  @media(max-width: 800px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    &-logo {
+      width: 112px;
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-size: 14px;
+      max-width: 80%;
+      padding: 0 20px;
+    }
+  }
+}

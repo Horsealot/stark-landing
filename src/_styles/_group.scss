@@ -1,0 +1,57 @@
+.group {
+  padding-bottom: 23%;
+  flex-grow: 1;
+  justify-content: center;
+  h2 {
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  &-logo {
+    width: 112px;
+    margin-bottom: 30px;
+  }
+  &-offices {
+    &__office {
+      text-align: center;
+      flex-basis: 100%;
+      padding-top: 30px;
+      &-title, &-address {
+        font-size: 12px;
+        line-height: 24px;
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;            
+      }
+      &-title {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      &-address {
+        font-weight: 200;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media(max-width: 800px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 22%;
+    h2 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &-offices {
+      flex-wrap: wrap;
+      &__office {
+        flex-basis: 100%;
+      }
+    }
+  }
+  @media(min-width: 1348px) {
+    padding-bottom: 16%;
+  }  
+}
