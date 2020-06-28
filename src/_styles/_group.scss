@@ -15,7 +15,6 @@
   &-offices {
     &__office {
       text-align: center;
-      flex-basis: 100%;
       padding-top: 30px;
       &-title, &-address {
         font-size: 12px;
@@ -46,9 +45,6 @@
     }
     &-offices {
       flex-wrap: wrap;
-      &__office {
-        flex-basis: 100%;
-      }
     }
   }
   @media(min-width: 1348px) {
